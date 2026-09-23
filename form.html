@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form register</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+    <h1>FORM PENDAFTARAN</h1>
+    <form action="#" method="get" enctype="multipart/form-data">
+
+        <!-- FIELDSET DATA DIRI -->
+        <fieldset>
+            <legend>Data Diri</legend>
+
+            <!-- TEXT -->
+            <p><label for="nama">Nama: 
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required></label></p>
+
+            <!-- Email -->
+            <p><label for="email">Email: 
+            <input type="email" id="email" name="email" placeholder="contoh@email.com" required></label></p>
+
+            <!-- Password -->
+            <p><label for="password">Password <input type="password" id="password" placeholder="Masukkan Password" required></label></p>
+
+            <!-- Date -->
+            <p><label for="tanggal">Tanggal Lahir:<input type="date" id="tanggal" name="tanggal" required></label></p>
+
+
+            <!-- Number -->
+            <p><label for="umur">Umur:<input type="number" min="1" max="100" id="umur" name="umur" placeholder="Masukkan Umur"></label></p>
+
+            <!-- Radio Button -->
+            <p>Jenis Kelamin:
+                <div class="option-group"></div>
+                <label for="laki_laki">
+                <input type="radio" name="Jenis_kelamin" id="laki_laki"value="lakilaki" required> Laki-iaki </label>
+
+                <label for="Perempuan">
+                <input type="radio" name="Jenis_kelamin" id="Perempuan" value="perempuan"> Perempuan</label>
+            </p>
+
+            <!-- Textarea -->
+            <p><label for="alamat">Alamat:<br> <textarea name="alamat" id="alamat" cols="30" rows="4" placeholder="masukkan alamat lengkap"></textarea></label>
+            </p>
+            </fieldset><br>
+
+            <!-- fieldset informasi -->
+            <fieldset>
+                <legend>Informasi Tambahan</legend>
+
+                <!-- Select Option -->
+            <label for="jurusan" name="jurusan">Jurusan:
+            </label>
+            <select id="jurusan" name="jurusan" required>
+                <option value="">-- Pilih Jurusan --</option>
+                <option value="ti">Teknologi Informasi</option>
+                <option value="si">Sistem Informasi</option>
+                <option value="ilkom">Ilmu Komputer</option>
+                <option value="teknik">Teknik Informatika</option>
+            </select>
+
+            <!-- Checkbox -->
+            <p><label>Bidang yang Diminati:</label>
+                <div class="option-group">
+                    <input type="checkbox" id="web" name="web" value="web development">
+                    <label for="web">Web development</label>
+
+                    <input type="checkbox" id="design" name="UI" value="UI UX design">
+                    <label for="design">UI/UX Design</label>
+
+                    <input type="checkbox" id="network" name="network" value="Jaringan">
+                    <label for="network">Jaringan</label>
+
+                    <input type="checkbox" id="cyber" name="cyber" value="Cyber security">
+                    <label for="cyber">Cyber Security</label>
+                </div>
+            </p>
+
+            <!-- URL -->   
+            <p><label for="website">Link Portfolio / Website:</label> <input type="url" id="website" name="website" placeholder="https://contoh.com">
+            </p>
+
+            <!-- File / Gambar -->
+            <p><label for="foto">Upload Foto:</label><input type="file" id="foto" name="foto" accept="image/*"></p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Akun dan Konfirmasi</legend>
+                <p><label for="username">Username:</label><input type="text" id="username" name="username" placeholder="Masukkan Username"></p>
+
+                <p><label for="Konfirmasi">Konfirmasi Data: </label><div class="option-group"><input type="checkbox" id="setuju" required><label for="setuju"> Saya menyetujui data yang diberikan: </label> 
+                </div>
+                </p>
+            </fieldset>
+
+            <!-- Submit -->
+            <p><input type="submit" value="kirim data">
+                </p>
+    </form>
+    </div>
+</body>
+</html>
